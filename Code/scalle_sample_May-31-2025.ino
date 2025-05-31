@@ -165,7 +165,7 @@ void loop() {
       Serial.print(packageNo);
       Serial.print(";");
 
-      float reading = scale.get_units(0);
+      float reading = scale.get_units();
       if (abs(reading) < 0.001) { // Threshold for noise
         reading = 0.000;
       }
